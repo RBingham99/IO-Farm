@@ -2,7 +2,7 @@
 
 namespace IoFarm\Entities;
 
-class Pig
+class Pig implements \JsonSerializable
 {
     private int $id;
     private string $name;
@@ -94,5 +94,16 @@ class Pig
     public function eat(string $food): string
     {
         return 'Mmm ' . $food;
+    }
+
+    public function jsonSerialize()
+    {
+        return [
+            'id' => $this->getId(),
+            'name' => $this->getName(),
+            'weight'=> $this->getWeight(),
+            'colour' => $this->getColour(),
+            'species' => $this->getSpecies()
+        ];
     }
 }
