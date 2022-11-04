@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"Validators\\IdValidatorTest::testValid_Given1ReturnsTrue":0.012}}
+{"version":1,"defects":[],"times":{"Validators\\IdValidatorTest::testValid_Given1ReturnsTrue":0.012,"IoFarm\\Validators\\IdValidatorTest::testValid_Given1ReturnsTrue":0.004}}

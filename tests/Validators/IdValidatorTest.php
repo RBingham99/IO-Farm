@@ -1,6 +1,6 @@
 <?php
 
-namespace Validators;
+namespace IoFarm\Validators;
 
 use PHPUnit\Framework\TestCase;
 
