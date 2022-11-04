@@ -1,0 +1,19 @@
+{
+  "name": "ioacademy/io-farm",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "richardbingham",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "IoFarm\\": "src/"
+    }
+  },
+  "require": {
+  }
+}
