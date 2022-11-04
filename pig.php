@@ -4,7 +4,20 @@ require 'vendor/autoload.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
-// TODO: Validate $_GET['id]
+use IoFarm\Validators\IdValidator;
+
+if (!isset($_GET['id']) || !IdValidator::valid($_GET['id'])) {
+        http_response_code(500);
+
+        $data = [
+            "message" => "Bad request",
+            "data" => []
+        ];
+
+        echo json_encode($data, true);
+
+        exit;
+}
 
 try {
     $pigService = new IoFarm\Services\PigService();
